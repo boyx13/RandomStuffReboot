@@ -12,6 +12,7 @@ public class ItemClass extends Item{
 	
 	public ItemClass() {
 		super();
+		this.setMaxStackSize(1);
 	}
 	
 	@Override

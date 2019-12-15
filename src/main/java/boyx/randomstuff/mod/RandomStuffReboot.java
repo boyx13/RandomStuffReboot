@@ -1,6 +1,7 @@
 package boyx.randomstuff.mod;
 
 import boyx.randomstuff.mod.proxy.CommonProxy;
+import boyx.randomstuff.mod.util.Log;
 import boyx.randomstuff.mod.util.Reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -20,16 +21,19 @@ public class RandomStuffReboot {
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent preInit) {
 		proxy.preInit();
+		Log.info("PreInit Complete");
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent init) {
 		proxy.init();
+		Log.info("Init Complete");
 	}
 	
 	@EventHandler
 	public void PostInit(FMLPostInitializationEvent postInit) {
 		proxy.postInit();
+		Log.info("PostInit Complete");
 	}
 
 }

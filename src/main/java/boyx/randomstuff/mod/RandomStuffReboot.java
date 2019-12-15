@@ -2,6 +2,7 @@ package boyx.randomstuff.mod;
 
 import boyx.randomstuff.mod.handler.ConfigurationHandler;
 import boyx.randomstuff.mod.init.ModBlocks;
+import boyx.randomstuff.mod.init.ModItems;
 import boyx.randomstuff.mod.proxy.CommonProxy;
 import boyx.randomstuff.mod.util.Log;
 import boyx.randomstuff.mod.util.Reference;
@@ -23,6 +24,7 @@ public class RandomStuffReboot {
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent preInit) {
 		ConfigurationHandler.init(preInit.getSuggestedConfigurationFile());
+		ModItems.init();
 		ModBlocks.init();
 		proxy.preInit();
 		Log.info("PreInit Complete");

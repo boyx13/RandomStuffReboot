@@ -20,6 +20,7 @@ public class RandomStuffReboot {
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent preInit) {
 		proxy.preInit();
+		System.out.println("lol");
 	}
 	
 	@EventHandler

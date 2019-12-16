@@ -7,17 +7,11 @@ import net.minecraft.item.Item;
 
 public class CreativeTabClass {
 	
-	public static final CreativeTabs RSReboot_TAB = new CreativeTabs(Reference.MODID) {
+	public static final CreativeTabs RSReboot_TAB = new CreativeTabs(Reference.MODID.toLowerCase()) {
 
 		@Override
 		public Item getTabIconItem() {
 			return ModItems.tester;
-		}
-		
-		@Override
-		public String getTranslatedTabLabel() {
-			return "RSReboot";
-		}
-		
+		}	
 	};
 }

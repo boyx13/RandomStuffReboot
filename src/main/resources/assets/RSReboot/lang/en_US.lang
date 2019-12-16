@@ -3,3 +3,6 @@ item.rsreboot:tester.name=Tester
 
 # Block Localization
 tile.rsreboot:brightStone.name=Brightstone
+
+# CreativeTab Localization
+itemGroup.rsreboot=Random Stuff Reboot

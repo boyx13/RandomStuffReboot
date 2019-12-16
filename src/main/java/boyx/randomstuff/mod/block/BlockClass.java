@@ -1,5 +1,6 @@
 package boyx.randomstuff.mod.block;
 
+import boyx.randomstuff.mod.creativeTab.CreativeTabClass;
 import boyx.randomstuff.mod.util.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -16,6 +17,7 @@ public class BlockClass extends Block{
 	
 	public BlockClass() {
 		this(Material.rock);
+		this.setCreativeTab(CreativeTabClass.RSReboot_TAB);
 	}
 
 	@Override

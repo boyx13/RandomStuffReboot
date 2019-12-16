@@ -1,5 +1,6 @@
 package boyx.randomstuff.mod.item;
 
+import boyx.randomstuff.mod.creativeTab.CreativeTabClass;
 import boyx.randomstuff.mod.util.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,6 +14,7 @@ public class ItemClass extends Item{
 	public ItemClass() {
 		super();
 		this.setMaxStackSize(1);
+		this.setCreativeTab(CreativeTabClass.RSReboot_TAB);
 	}
 	
 	@Override

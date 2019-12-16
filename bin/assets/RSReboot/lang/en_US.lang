@@ -1,2 +1,5 @@
 # Item Localization
 item.rsreboot:tester.name=Tester
+
+# Block Localization
+tile.rsreboot:brightStone.name=Brightstone

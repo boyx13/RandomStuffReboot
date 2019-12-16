@@ -7,6 +7,8 @@ import net.minecraftforge.common.config.Configuration;
 
 public class ConfigurationHandler {
 	
+	public static int testStackSize = 1;
+	
 	public static void init(File configFile) {
 		
 		Configuration configuration = new Configuration(configFile);
@@ -15,6 +17,7 @@ public class ConfigurationHandler {
 		try {
 			configuration.load();
 			configValue = configuration.get(Configuration.CATEGORY_GENERAL, "configValue", true, "This is an example").getBoolean(true);
+			testStackSize = configuration.get("StackSize", "testStackSize", 1, "StackSize of the Item Tester").getInt(1);
 			}catch(Exception e) {
 				Log.error("Config File Error");
 			}finally {
